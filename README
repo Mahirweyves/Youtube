@@ -1,35 +1,23 @@
+# YouTuber App
 
-## Code Overview
-- **Data Filtering:**
-- Filters YouTubers with less than 50 million subscribers.
-- Handles missing or invalid values in the `subscribers` column.
+A web-based application to visualize and explore YouTube statistics based on the number of subscribers for various YouTubers. This app provides an interactive visualization of YouTuber subscriber distributions and a searchable dataset.
 
-- **User Interface:**
-- Two tabs:
- - `Visualization`: Contains the histogram and search bar.
- - `Data`: Displays the filtered dataset.
+## Features
 
-- **Interactive Components:**
-- Slider for selecting the number of bins in the histogram.
-- Search bar to filter YouTubers by name.
+- **Subscriber Distribution Visualization**: Displays a histogram showing the distribution of subscribers for YouTubers with less than 50 million subscribers.
+- **Interactive Search**: Allows searching for YouTubers by name, filtering the data accordingly.
+- **Dynamic Data Table**: Displays a table of YouTuber statistics, which updates as per the search input.
 
-## Example Usage
-- Adjust the number of bins to explore different granularity levels in the subscriber distribution.
-- Search for a specific YouTuber by entering their name in the search bar.
+## Requirements
 
-## Screenshots
-### Visualization Tab
-![Histogram of Subscribers](example_histogram.png)
+To run this app locally, you'll need the following Python libraries:
 
-### Data Tab
-![Filtered Data Table](example_data_table.png)
+- `pandas` - For data manipulation
+- `matplotlib` - For plotting and visualization
+- `shiny` - For creating the web app interface
+- `numpy` - For numerical operations
 
-## Contributing
-Contributions are welcome! Feel free to submit issues or pull requests.
+You can install the required libraries using the following command:
 
-## License
-This project is licensed under the MIT License.
-
----
-
-**Note:** Replace `<repository-url>` and `<repository-folder>` with the actual repository URL and folder name.
+```bash
+pip install -r requirements.txt
